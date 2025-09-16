@@ -37,7 +37,7 @@ def main():
                 # Check for shot collision with asteroids
                 if shot.collision(asteroid):
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
 
                 # Check for player collision with asteroids
                 if asteroid.collision(player):
